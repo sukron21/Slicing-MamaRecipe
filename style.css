@@ -46,7 +46,7 @@ form div a{
     color: #9b9898 !important;
 }
 h3{
-    color: #EFC81A !important;
+    /* color: #EFC81A !important; */
 }
 @font-face {
     font-family: airbnb;
@@ -328,4 +328,7 @@ float: right;
 margin-top: -30px;
 margin-right: 100px;
 font-size: 8px;
+}
+.hal21 h3{
+    color: black;
 }
