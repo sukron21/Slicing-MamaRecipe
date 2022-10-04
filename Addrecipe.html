@@ -33,6 +33,18 @@
         color: black;
         background-color: white;
     }
+    .ingredients textarea{
+        border-style: none;
+        border: none;
+        background-color: #F6F5F4;
+    }
+    .judul textarea{
+        border: none;
+        background-color: #F6F5F4;
+    }
+    .btnpost{
+        padding-top: 20px;
+    }
     </style>
     <title>Add Recipe!</title>
   </head>
@@ -53,17 +65,19 @@
             <label for="btn">AddPhoto</label>
         </div></div>
         <div class="judul">
-            <textarea cols="97" rows="1">Title </textarea>
+            <textarea cols="97" rows="1" placeholder="Title"></textarea>
         </div>
         <div class="ingredients">
-            <td><textarea cols="97" rows="10">Ingredients :  </textarea></td>
+            <td><textarea cols="97" rows="10" placeholder="Ingredients :"></textarea></td>
         </div>
         <div class="judul">
-            <textarea cols="97" rows="2">video </textarea>
+            <textarea cols="97" rows="2" placeholder="video "></textarea>
         </div>
         <div class="d-grid gap-2">
+            <div class="btnpost">
             <button type="submit" class="btn btn-custom1">
               <a href="lorean sandwich.html">Post</a>
+            </div>
             </button>
           </div>
         </div>
