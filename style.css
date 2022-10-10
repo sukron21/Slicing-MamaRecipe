@@ -121,8 +121,8 @@ body{
     margin-right: 10px;
 }
 .decoration img{
-    width: 450px;
-    height: 490px;
+    max-width: 35vw;
+    max-height: 47vw;
     position: absolute;
     top: 100px;
     right: 100px;
@@ -167,7 +167,7 @@ background:rgb(238, 234, 234);
 height: 60px;
 position: absolute;
 top: 200px;
-width: 400px;
+width: 35vw;
 align-items: center;
 display: flex;
 border-radius: 15px;
@@ -193,7 +193,6 @@ top: 200px;
 }
 .icon img{
     width: 30px;
-    margin-top: -160px;
     z-index: 2;
     margin-left: 40px;
 }
@@ -213,7 +212,6 @@ top: 200px;
  .narasi{
     text-align: center;
     padding-top: 250px;
-    margin-left: 100px;
 
 }
 .narasi button,
@@ -227,8 +225,24 @@ top: 200px;
     border-radius: 5px;
     border: none;
 } 
+.narasi1{
+    text-align: center;
+    padding-top: 250px;
+
+}
+.narasi1 button,
+.narasi1 button:focus {
+    margin-top: 20px;
+    outline: none;
+    width: 120px;
+    height: 40px;
+    background-color: #efc81a;
+    color: white;
+    border-radius: 5px;
+    border: none;
+} 
 .hal4{
-    background-color: orange;
+    background-color: #EFC81A;
     width: 10px;
     height: 90px;
     margin-left: 50px;
@@ -272,7 +286,12 @@ top: 200px;
 }
 .gambar{
     float: left;
-    width: 50%;
+    width: 60%;
+    padding-left: 50px;
+}
+.gambar1{
+    float: left;
+    width: 60%;
     padding-left: 50px;
 }
 .hal2coy{
@@ -285,11 +304,16 @@ top: 200px;
     float: left;
 }
 .lesson img{
-    width: 400px;
-    height: 400px;
+     max-width: 25vw;
+        max-height: 35vw;
     
 }
 .lessons{
+    margin-top: 70px;
+    margin-left: 30px;
+    height: 380px;
+}
+.lessons1{
     margin-top: 70px;
     margin-left: 30px;
     height: 380px;
@@ -329,4 +353,7 @@ float: right;
 margin-top: -30px;
 margin-right: 100px;
 font-size: 8px;
+}
+.gambar6{
+    height: 1700px;
 }
