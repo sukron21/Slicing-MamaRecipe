@@ -27,6 +27,7 @@
         .lesson{
         float:left;
         width: 25%;
+        height: 300px;
         background-color: white;
         }
         .lesson .lesson-icon img{
@@ -45,6 +46,7 @@
         .btnaja{
             color: black;
             margin-top: -200px;
+            text-align: center;
         }
         .kata21{
             padding-top: 100px;
@@ -72,12 +74,13 @@
             font-size: 8px;
             color: black;
         }
-        .halcolapse{
+        .container .halcolapse{
             width: 100%;
             height: auto;
+            padding-top: 100px;
         }
         .container .navbar2{
-          margin-left: -150px;
+
           margin-top: -80px;
         }
         .navbar2{
@@ -91,7 +94,8 @@
         }
         .photop{
           width: 100%;
-          height: 300px;
+          height: 200px;
+          text-align: center;
         }
         .photop p{
           text-align: center;
@@ -120,49 +124,82 @@
         .footer{
           position: absolute;
         }
+        @media screen and (max-width: 640px){
+        .lesson{
+          width: 100%;
+          height: auto;
+        }
+        .lessons{
+          margin-top: -100px;
+          height: 600px;
+        }
+        .kata2 h1{
+            font-size: 12px;
+        }
+        .kata2 p{
+            font-size: 9px;
+        }
+    }
     </style>
   </head>
   <body>
    
-        <div class="container">
-          <nav class="navbar2">
-            <ul>
-              <a href="/index.html">Home</a>
-              <a href="/Addrecipe.html">Add Recipe</a>
-              <a href="/profile.html">Profile</a>
-            </ul></nav>
-            <div class="photop">
-            <img src="img/photopropil.png" alt="" srcset="">
-            <div class="btncustom">
-                <button class="btn1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 <div class="img1">
-                  <img src="img/edit-3.png" alt="" srcset="">
+          <div class="container-fluid">
+            <nav class="navbar2">
+              <ul>
+                <a href="/index.html">Home</a>
+                <a href="/Addrecipe.html">Add Recipe</a>
+                <a href="/profile.html">Profile</a>
+              </ul></nav>
+              <div class="container">
+              <div class="photop">
+              <img src="img/photopropil.png" alt="" srcset="">
+              <div class="btncustom">
+                  <button class="btn1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="img1">
+                    <img src="img/edit-3.png" alt="" srcset="">
+                  </div>
+                  <p>Garneta Sharina</p>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">  Change Photo Profile  </a>
+                    <a class="dropdown-item" href="resetPass copy.html">  Change Password  </a>
+                    
+                  </div>
+              </div>
+                
+              </div></div>
+            <div class="container">
+              <div class="halcolapse">
+                <p>
+                  <a class="btn btnaja" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                  My Recipe
+                  </a>
+                  <a class="btn btnaja" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                    Saved Recipe
+                  </a>
+                  <a class="btn btnaja" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                    Liked Recipe
+                  </a>
+              </p>
+              <div class="collapse" id="collapseExample1">
+                  <div class="lessons">
+                      <div class="lesson">
+                        <div class="lesson-icon">
+                          <img src="img/Rectangle 327(1).png">
+                          <p>Bomb<br>Chicken</p>
+                        </div>
+                      </div>
+                      <div class="lesson">
+                        <div class="lesson-icon">
+                          <img src="img/Rectangle 328.png">
+                          <p>Bananas<br>Pancake</p>
+                        </div>
+                      </div>
+                  </div>
                 </div>
-                <p>Garneta Sharina</p>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">  Change Photo Profile  </a>
-                  <a class="dropdown-item" href="resetPass copy.html">  Change Password  </a>
-                  
-                </div>
-            </div>
-              
-            </div>
-          <div class="container">
-             <div class="halcolapse">
-              <p>
-                <a class="btn btnaja" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                 My Recipe
-                </a>
-                <a class="btn btnaja" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                  Saved Recipe
-                </a>
-                <a class="btn btnaja" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-                  Liked Recipe
-                </a>
-            </p>
-            <div class="collapse" id="collapseExample1">
-                <div class="lessons">
+                <div class="collapse" id="collapseExample2">
+                  <div class="lessons">
                     <div class="lesson">
                       <div class="lesson-icon">
                         <img src="img/Rectangle 327(1).png">
@@ -176,62 +213,46 @@
                       </div>
                     </div>
                 </div>
-              </div>
-              <div class="collapse" id="collapseExample2">
-                <div class="lessons">
-                  <div class="lesson">
-                    <div class="lesson-icon">
-                      <img src="img/Rectangle 327(1).png">
-                      <p>Bomb<br>Chicken</p>
-                    </div>
-                  </div>
-                  <div class="lesson">
-                    <div class="lesson-icon">
-                      <img src="img/Rectangle 328.png">
-                      <p>Bananas<br>Pancake</p>
-                    </div>
-                  </div>
-              </div>
-              </div>
-              <div class="collapse" id="collapseExample3">
-                <div class="lessons">
-                  <div class="lesson">
-                    <div class="lesson-icon">
-                      <img src="img/Rectangle 327(1).png">
-                      <p>Bomb<br>Chicken</p>
-                    </div>
-                  </div>
-                  <div class="lesson">
-                    <div class="lesson-icon">
-                      <img src="img/Rectangle 328.png">
-                      <p>Bananas<br>Pancake</p>
-                    </div>
-                  </div>
-              </div>
-              </div>
-            </div> </div>
-            <div class="container-fluid">
-                <div class="footer">
-                    <div class="kata21">
-                    <h1>Eat, Cook, Repeat</h1>
-                    <p>Share Your Best Recipe By Uploading Here !</p>
                 </div>
-                <nav class="navbar31">
-                    <div class="navbar-footer">
-                        <ul>
-                            <a href="">Product</a>
-                            <a href="">Company</a>
-                            <a href="">Learn More</a>
-                            <a href="">Get in Touch</a>
-                        </ul>
+                <div class="collapse" id="collapseExample3">
+                  <div class="lessons">
+                    <div class="lesson">
+                      <div class="lesson-icon">
+                        <img src="img/Rectangle 327(1).png">
+                        <p>Bomb<br>Chicken</p>
+                      </div>
                     </div>
-                </nav>
-                <div class="logo1">
-                    <p>@PijarCamp</p>
+                    <div class="lesson">
+                      <div class="lesson-icon">
+                        <img src="img/Rectangle 328.png">
+                        <p>Bananas<br>Pancake</p>
+                      </div>
+                    </div>
                 </div>
                 </div>
+              </div>
             </div>
-        </div>
+            </div>
+                  <div class="foot">
+                      <div class="kata21">
+                      <h1>Eat, Cook, Repeat</h1>
+                      <p>Share Your Best Recipe By Uploading Here !</p>
+                  </div>
+                  <nav class="navbar31">
+                      <div class="navbar-footer">
+                          <ul>
+                              <a href="">Product</a>
+                              <a href="">Company</a>
+                              <a href="">Learn More</a>
+                              <a href="">Get in Touch</a>
+                          </ul>
+                      </div>
+                  </nav>
+                  <div class="logo1">
+                      <p>@PijarCamp</p>
+                  </div>
+                  </div>
+        
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
