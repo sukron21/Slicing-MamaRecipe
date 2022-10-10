@@ -16,10 +16,9 @@
     font-family: sans-serif;
     border-radius: 0.3rem;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 1rem;   
     }
     .container .navbar2{
-        margin-left: -150px;
           margin-top: -80px;
         }
     .navbar2{
@@ -36,21 +35,31 @@
     .ingredients textarea{
         border-style: none;
         border: none;
-        background-color: #F6F5F4;
+        width: 100%;
+        height: 200px;
     }
     .judul textarea{
         border: none;
         background-color: #F6F5F4;
+        width: 100%;
     }
     .btnpost{
         padding-top: 20px;
+        margin-bottom: 100px;
+    }
+    @media screen and (max-width: 640px){
+        .kata2 h1{
+            font-size: 12px;
+        }
+        .kata2 p{
+            font-size: 9px;
+        }
     }
     </style>
     <title>Add Recipe!</title>
   </head>
   <body>
-    
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar2">
                 <ul>
                     <a href="/index.html">Home</a>
@@ -65,28 +74,28 @@
             <label for="btn">AddPhoto</label>
         </div></div>
         <div class="judul">
-            <textarea cols="97" rows="1" placeholder="Title"></textarea>
+            <textarea placeholder="Title"></textarea>
         </div>
         <div class="ingredients">
-            <td><textarea cols="97" rows="10" placeholder="Ingredients :"></textarea></td>
+            <td><textarea  placeholder="Ingredients :"></textarea></td>
         </div>
         <div class="judul">
-            <textarea cols="97" rows="2" placeholder="video "></textarea>
+            <textarea  placeholder="video "></textarea>
         </div>
         <div class="d-grid gap-2">
             <div class="btnpost">
             <button type="submit" class="btn btn-custom1">
               <a href="lorean sandwich.html">Post</a>
-            </div>
             </button>
-          </div>
         </div>
-        <div class="container">
-            <div class="footer">
+          </div>
+        </div></div>
+        
+            <div class="foot">
                 <div class="kata2">
                 <h1>Eat, Cook, Repeat</h1>
                 <p>Share Your Best Recipe By Uploading Here !</p>
-            </div></div>
+            </div>
             <nav class="navbar3">
                 <div class="navbar-footer">
                     <ul>
@@ -100,8 +109,8 @@
             <div class="logo">
                 <p>@PijarCamp</p>
             </div>
-            </div>
-        </div>
+        
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
